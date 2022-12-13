@@ -1,7 +1,9 @@
+import os
+
 LINK_FILE_CONTENT = "data/data1.txt"
 CONNECTION_STRING_MGA = "mongodb+srv://vutrian:An.vt172933@cluster0.rjcdt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 CONNECTION_STRING_MGA2 = "mongodb://mdata_admin:kalilinux2018@23.172.112.93:27017/admin?retryWrites=true&w=majority"
-CONNECTION_STRING_MGA1 = "mongodb://mnetwordtest2021:mnetwordtest2021@94.237.76.25:27017/admin?retryWrites=true&w=majority"
+CONNECTION_STRING_MGA1 = os.environ.get("MONGO_URI")
 
 CONNECTION_STRING_LOCAL = "localhost"
 PORT = 27017
