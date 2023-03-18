@@ -93,7 +93,7 @@ def no_accent_vietnamese(s):
   s = re.sub(r'[đ]', 'd', s)
   return s
 header_titles = ["Top {}"]
-last_titles = ["mới nhất năm 2022"]
+last_titles = ["mới nhất năm 2023"]
 def createandimportcontent(campaign_detail):
   keywords = campaign_detail["keyword"]["Keyword"]
   summary_text_title =  ""
@@ -216,7 +216,7 @@ def createandimportcontent(campaign_detail):
   if campaign_detail["campaign"]["language"] == "vi":
     title = random.choice(header_titles).format(number_search)+" " +keywords+" " + random.choice(last_titles)
   else:
-    title = random.choice(header_titles).format(number_search)+" " +keywords+" " + "in 2022"
+    title = random.choice(header_titles).format(number_search)+" " +keywords+" " + "in 2023"
     
 
   I1.text((150, 460), title, font=myFont, fill =(255, 215, 0))

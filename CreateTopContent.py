@@ -140,7 +140,7 @@ def CreateTopContent(articles,urls,url_ref,lang,lists_url_ref):
         body = body_en
 
     for index, article in enumerate(articles):
-        date = random_date("1/1/2019 1:30 PM", "1/1/2022 1:30 PM", random.random())
+        date = random_date("1/1/2019 1:30 PM", "1/1/2023 1:30 PM", random.random())
         menubody =  menubody + """<li><a href="#h2_{}">{}.{}</a></li>""".format(index,index+1,article.title)
         if url_ref[index] == "":
             body1 = body1 + body.format(index,index+1,article.title,urlparse(urls[index][0]).netloc,date,random.randint(3,5),random.randint(10000,100000),article.meta_description,urls[index][1],article.title,article.top_image)
