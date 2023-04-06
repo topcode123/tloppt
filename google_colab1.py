@@ -183,6 +183,7 @@ def createandimportcontent(campaign_detail):
     outbouding = random.choice(prop)
     
     content = header_text_vi.format(campaign_detail["keyword"]["Keyword"],campaign_detail["web_info"]["Website"].split(".")[0].replace("https://","").replace("http://","")) + CreateTopContent(hhhhh,list_url,url_ref,campaign_detail["campaign"]["language"],lists_url_ref)
+    print(content)
     if outbouding:
       try:
         translated = GoogleTranslator(source='auto', target='en').translate(campaign_detail["keyword"]["Keyword"])
@@ -214,6 +215,7 @@ def createandimportcontent(campaign_detail):
         print(e)
   else:
     content = header_text_en.format(campaign_detail["keyword"]["Keyword"],campaign_detail["web_info"]["Website"].split(".")[0].replace("https://","").replace("http://","")) + CreateTopContent(hhhhh,list_url,url_ref,campaign_detail["campaign"]["language"],lists_url_ref)
+    print(content)
   if campaign_detail["campaign"]["language"] == "vi":
     title = random.choice(header_titles).format(number_search)+" " +keywords+" " + random.choice(last_titles)
   else:

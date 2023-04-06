@@ -131,7 +131,7 @@ element_comment = """
 """
 import random
 def CreateTopContent(articles,urls,url_ref,lang,lists_url_ref):
-    
+    print("CreateTopContentCreateTopContentCreateTopContentCreateTopContentCreateTopContentCreateTopContentCreateTopContentCreateTopContentCreateTopContent")
     menubody = ""
     body1  = "" 
     if lang  == "vi":
