@@ -251,7 +251,7 @@ def createandimportcontent(campaign_detail):
                       data=image,
                       headers = header) as response:
           # res1 =  response.text
-          res =  response.json(encoding="utf-8")
+          res =  response.json()
           newID= res.get('id')
           print(newID)
   done = ImportContents(campaign_detail,content,campaign_detail["campaign"]["CategoryId"],title,self_url,newID)
