@@ -113,7 +113,7 @@ def createandimportcontent(campaign_detail):
 
   hhhhh = []
   url_ref = []
-  print("list url of campaign": list_url)
+  print(f"list url of campaign: {list_url}")
   print(len(list_url))
   for link in list_url:
     try:
